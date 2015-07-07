@@ -8,7 +8,7 @@
 			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 25.0, 70.0, 1499.0, 789.0 ],
+		"rect" : [ 408.0, 63.0, 1426.0, 733.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -29,6 +29,58 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 139.0, 403.0, 195.0, 141.0 ],
+					"setstyle" : 3
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 104.0, 430.0, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 44.0, 430.0, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 44.0, 337.0, 117.0, 20.0 ],
+					"text" : "j.receive /points.1/fx"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "none",
 					"color" : [ 0.0, 0.71644, 0.314895, 1.0 ],
 					"fontname" : "Arial",
@@ -46,7 +98,7 @@
 							"architecture" : "x64"
 						}
 ,
-						"rect" : [ 923.0, 283.0, 940.0, 702.0 ],
+						"rect" : [ 780.0, 137.0, 940.0, 702.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -524,7 +576,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 92.0, 222.0, 265.0, 27.0 ],
-									"text" : "poly~ polymap 20 @args map.1"
+									"text" : "poly~ polymap 3 @args map.1"
 								}
 
 							}
@@ -3062,6 +3114,33 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3093,6 +3172,55 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "random.model.maxpat",
+				"bootpath" : "/Volumes/data/GITs/rtvi/max-package/patchers/data/random",
+				"patcherrelativepath" : "../../rtvi/max-package/patchers/data/random",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "randtransf.maxpat",
+				"bootpath" : "/Volumes/data/GITs/rtvi/max-package/patchers/data/random",
+				"patcherrelativepath" : "../../rtvi/max-package/patchers/data/random",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "randomfR.maxpat",
+				"bootpath" : "/Volumes/data/GITs/rtvi/max-package/patchers/data/random",
+				"patcherrelativepath" : "../../rtvi/max-package/patchers/data/random",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "randomR.maxpat",
+				"bootpath" : "/Volumes/data/GITs/rtvi/max-package/patchers/data/random",
+				"patcherrelativepath" : "../../rtvi/max-package/patchers/data/random",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "minmaxi.maxpat",
+				"bootpath" : "/Volumes/data/GITs/rtvi/max-package/patchers/data/random",
+				"patcherrelativepath" : "../../rtvi/max-package/patchers/data/random",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "random.view.maxpat",
+				"bootpath" : "/Volumes/data/GITs/rtvi/max-package/patchers/data/random",
+				"patcherrelativepath" : "../../rtvi/max-package/patchers/data/random",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.header.maxpat",
+				"bootpath" : "/Volumes/data/GITs/j.project/max-package/patchers",
+				"patcherrelativepath" : "../max-package/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "thru.maxpat",
 				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Pluggo for Live resources/patches",
 				"patcherrelativepath" : "../../../../../Applications/Max 6.1/patches/m4l-patches/Pluggo for Live resources/patches",
@@ -3101,34 +3229,55 @@
 			}
 , 			{
 				"name" : "polymap.edit.maxpat",
-				"bootpath" : "/Volumes/data/GITs/span4jamoma/span-package/patchers",
-				"patcherrelativepath" : "../span-package/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.header.maxpat",
-				"bootpath" : "/Volumes/data/GITs/span4jamoma/span-package/patchers",
-				"patcherrelativepath" : "../span-package/patchers",
+				"bootpath" : "/Volumes/data/GITs/j.project/max-package/patchers",
+				"patcherrelativepath" : "../max-package/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "polymap.maxpat",
-				"bootpath" : "/Volumes/data/GITs/span4jamoma/span-package/patchers",
-				"patcherrelativepath" : "../span-package/patchers",
+				"bootpath" : "/Volumes/data/GITs/j.project/max-package/patchers",
+				"patcherrelativepath" : "../max-package/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmodel2span.maxpat",
-				"bootpath" : "/Volumes/data/GITs/span4jamoma/span-package/patchers",
-				"patcherrelativepath" : "../span-package/patchers",
+				"bootpath" : "/Volumes/data/GITs/j.project/max-package/patchers",
+				"patcherrelativepath" : "../max-package/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.namespace.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.return.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.init.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -3140,27 +3289,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.init.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
 				"type" : "iLaX"
 			}
  ]
